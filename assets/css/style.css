@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.split-cost-wrapper {
+    width: 683px;
+    border: 1px solid black;
+    background-color: #fbfbfb;
+    padding: 35px 65px;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 0 0 20px 0;
+}
+
+.unsettled-wrapper {
+    background-color: #d9d9d9;
+    padding: 15px;
+}
+
+h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+}
+
+.unsettled-wrapper > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.unsettled-wrapper .amount {
+    font-size: 76px;
+    font-weight: bold;
+}
+
+.unsettled-wrapper button {
+    font-size: 25px;
+    color: white;
+    background-color: #182BBC;
+    border-radius: 20px;
+    border: 0;
+    white-space: nowrap;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.unsettled-wrapper button:hover {
+    background-color: #0e1f77;
+}
+
+.users-wrapper {
+    padding: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.users-wrapper img {
+    border-radius: 50%;
+    max-width: 112px;
+}
+
+.form {
+    background-color: #fbfbfb;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-item label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form-item label span {
+    color: red;
+}
+
+.form-item input[type="text"] {
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+.form-item input[type="text"]:focus {
+    outline: none;
+    border: 2px solid #182BBC;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form input[type="submit"] {
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #333;
+}
+
+.form-row .form-item {
+    flex-grow: 2;
+}
+
+.expenses-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.expenses-item {
+    border: 1px solid black;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.expenses-item div {
+    display: flex;
+    gap: 20px;
+}
+
+.expenses-item div span {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.expenses-item div span:first-child {
+    flex-grow: 2;
+}
+
+.expenses-item .date {
+    font-size: 20px;
+}
+
+.expenses-item + .settled {
+    background-color: #F2EEEE;
+}
+
+.expenses-footer {
+    padding: 25px 0;
+    text-align: center;
+
+}
+
+.expenses-footer button {
+    font-size: 24px;
+    font-weight: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
